@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Component Management System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-boxes text-primary me-2 fs-1"></i>
+                <span class="brand-text">PCMS</span>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="bi bi-house-door me-1"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-folder me-1"></i>Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-list-task me-1"></i>Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="bi bi-info-circle me-1"></i>About</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-auth">
+                    <a href="#" class="btn btn-primary"><i class="bi bi-box-arrow-in-right me-2"></i>Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main container -->
+    <div class="container main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-shape"></div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <span class="hero-badge">Project Management Made Easy</span>
+                    <h1 class="hero-title">Transform Your <span class="text-primary">Project</span> Management Process</h1>
+                    <p class="hero-subtitle">Streamline workflows, enhance collaboration, and deliver projects on time with our powerful management system.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary btn-lg shadow-lg"><i class="bi bi-rocket-takeoff me-2"></i>Get Started</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg ms-3"><i class="bi bi-play-circle me-2"></i>Watch Demo</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label ms-1">Projects Managed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10k+</span>
+                            <span class="stat-label">Team Members</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <div class="hero-image-wrapper me-4">
+                        <img src="images/Colaboration.avif" alt="Project Management" class="hero-image">
+                        <div class="floating-card card-1">
+                            <i class="bi bi-check-circle-fill text-success"></i>
+                            <span>Project Completed</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="bi bi-lightning-fill text-warning"></i>
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section class="how-it-works-section">
+            <div class="section-badge">How It Works</div>
+            <div class="section-header text-center">
+                <h2 class="section-title">Simple & Effective Process</h2>
+                <p class="section-subtitle">Our streamlined workflow makes project management a breeze</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <i class="bi bi-pencil-square"></i>
+                            <span class="process-number">1</span>
+                        </div>
+                        <h3>Plan Your Project</h3>
+                        <p>Define project scope, set milestones, and organize tasks effectively.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <i class="bi bi-people"></i>
+                            <span class="process-number">2</span>
+                        </div>
+                        <h3>Collaborate</h3>
+                        <p>Work together with your team, share resources, and track progress in real-time.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="process-card">
+                        <div class="process-icon">
+                            <i class="bi bi-rocket-takeoff"></i>
+                            <span class="process-number">3</span>
+                        </div>
+                        <h3>Deliver & Review</h3>
+                        <p>Complete projects on time and analyze performance for continuous improvement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="section-header text-center">
+                <span class="section-badge">Why Choose Us</span>
+                <h2 class="section-title">Powerful Features for<br><span class="text-primary">Project Success</span></h2>
+            </div>
+            <div class="row g-4">
+                <!-- Feature Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-kanban"></i>
+                        </div>
+                        <h3>Smart Project Tracking</h3>
+                        <p>Real-time monitoring of project progress with intuitive dashboards and automated alerts.</p>
+                        <a href="#" class="feature-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Feature Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3>Team Collaboration</h3>
+                        <p>Foster seamless communication and file sharing between team members in real-time.</p>
+                        <a href="#" class="feature-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Feature Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h3>Resource Management</h3>
+                        <p>Optimize resource allocation and track expenses with advanced analytics tools.</p>
+                        <a href="#" class="feature-link">Learn More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="section-badge">Testimonials</div>
+            <div class="section-header text-center">
+                <h2 class="section-title">What Our Users Say</h2>
+                <p class="section-subtitle">Trusted by teams worldwide for effective project management</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="bi bi-quote"></i>
+                            <p>"This platform has transformed how we manage projects. The interface is intuitive and the features are exactly what we needed."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/man-user-circle-icon.png" alt="Sarah Johnson" class="author-image">
+                            <div class="author-info">
+                                <h4>Sarah Johnson</h4>
+                                <p>Project Manager, TechCorp</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="bi bi-quote"></i>
+                            <p>"The collaboration features are outstanding. We've seen a 40% increase in team productivity since implementing this system."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/man-user-circle-icon.png" alt="Michael Chen" class="author-image">
+                            <div class="author-info">
+                                <h4>Michael Chen</h4>
+                                <p>Team Lead, InnovateCo</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-half"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="bi bi-quote"></i>
+                            <p>"Easy to use, great support, and constant improvements. It's exactly what we were looking for in a project management tool."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="images/man-user-circle-icon.png" alt="Emily Rodriguez" class="author-image">
+                            <div class="author-info">
+                                <h4>Emily Rodriguez</h4>
+                                <p>Product Owner, DesignHub</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Main container end -->
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <div class="footer-logo d-flex align-items-center gap-2 mb-4">
+                                <i class="bi bi-boxes text-white me-2 fs-1"></i>
+                                <h3>PCMS</h3>
+                            </div>
+                            <p class="footer-desc">Project Component Management System - Streamline your project workflow with our comprehensive management solution.</p>
+                            <div class="footer-social d-flex gap-3">
+                                <a href="#" title="Follow us on Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" title="Follow us on Twitter"><i class="bi bi-twitter"></i></a>
+                                <a href="#" title="Connect on LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" title="Find us on GitHub"><i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="bi bi-chevron-right"></i> Home</a></li>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i> Features</a></li>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i> About Us</a></li>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i> Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4>User Access</h4>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="bi bi-chevron-right"></i> Super Admin Login</a></li>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i> Project Manager Portal</a></li>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i> User Dashboard</a></li>
+                                <li><a href="#"><i class="bi bi-chevron-right"></i> Help Center</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h4>Contact Info</h4>
+                            <ul class="footer-contact list-unstyled">
+                                <li>
+                                    <i class="bi bi-geo-alt"></i>
+                                    <span>123 Business Avenue, Mumbai, India</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-envelope"></i>
+                                    <span>contact@pcms.com</span>
+                                </li>
+                                <li>
+                                    <i class="bi bi-phone"></i>
+                                    <span>+91 123 456 7890</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p class="copyright mb-0"> 2025 PCMS. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="footer-bottom-links list-inline mb-0 d-flex justify-content-md-end justify-content-center gap-4">
+                                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                                <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                                <li class="list-inline-item"><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
